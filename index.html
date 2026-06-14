@@ -1299,7 +1299,7 @@ footer {
       <!-- Right: form -->
       <div class="contact-form-wrap reveal-right" id="contactFormWrap">
         <h3>// INITIALIZE CONTACT</h3>
-        <form id="contactForm" onsubmit="handleSubmit(event)">
+        <form id="contactForm" action="https://formspree.io/f/YOUR_ID_HERE" method="POST">
           <div class="form-row">
             <div class="form-group">
               <label for="fname">First Name</label>
@@ -1379,11 +1379,7 @@ footer {
             ▶ SUBMIT SECURE REQUEST
           </button>
         </form>
-        <div class="form-success" id="formSuccess">
-          <div class="check">✓</div>
-          <div style="font-size:1rem;letter-spacing:0.1em;color:var(--cyan);">MESSAGE RECEIVED</div>
-          <div style="font-size:0.8rem;color:var(--text-dim);margin-top:0.8rem;font-family:'Rajdhani',sans-serif;font-weight:400;letter-spacing:0.05em;">Our security team will respond within 2 business hours.</div>
-        </div>
+        
       </div>
     </div>
   </div>
@@ -1569,14 +1565,8 @@ if (map) {
   document.head.appendChild(style);
 }
 
-// FORM SUBMIT
-function handleSubmit(e) {
-  e.preventDefault();
-  const form = document.getElementById('contactForm');
-  const success = document.getElementById('formSuccess');
-  form.style.display = 'none';
-  success.style.display = 'block';
-}
+
+
 </script>
 </body>
 </html>
